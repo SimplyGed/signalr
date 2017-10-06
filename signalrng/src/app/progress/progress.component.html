@@ -1,0 +1,10 @@
+<div class="trigger">
+  <button mat-raised-button color="primary" (click)="sendMessage()" [disabled]="currentProgress.percent !== 0 && currentProgress.percent !== 100">Start Update</button>
+</div>
+
+<div class="progress">
+  <mat-progress-bar color="primary" [value]="currentProgress.percent"></mat-progress-bar>
+</div>
+<div class="message">
+  <strong>{{ currentProgress.message }}</strong>
+</div>
